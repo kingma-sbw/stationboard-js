@@ -18,3 +18,24 @@ Spalltenelement hinzufügen| `const cell = row.insertCell(0);`
 || folgendes funktioniert nur in `async` Function
 API-Befehl auslösen|`const response = await fetch(url);`
 API-Resultat lesen|`const data = await response.json();`
+
+
+## VueJS
+1) in index.html oberhalb app.js das ergänzen
+
+```js
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+```
+
+2) in app.js das
+
+```js
+Vue.createApp({
+    data() {
+        return{}
+    },
+    methods: {
+
+    }
+}).mount('#app');
+```
